@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dayText: UITextField!
     @IBOutlet weak var monthText: UITextField!
     @IBOutlet weak var yearText: UITextField!
-    @IBOutlet weak var dayOfTheWeek: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         statusBarStyle()
@@ -24,12 +24,14 @@ class ViewController: UIViewController {
         let calendar = Calendar.current
          var dateCompenets = DateComponents()
         
-        guard let day = dayTextField.text, let month = monthTextField.text, let year = yearTextField.text else {return}
+        dateCompenets.day = Int(dayText.text!)
+        dateCompenets.month = Int(monthText.text!)
+        dateCompenets.year = Int(yearText.text!)
+        
+   //     guard let day = dayTextField.text, let month = monthTextField.text, let year = yearTextField.text else {return}
         
       
-      //  dateCompenets.day = Int(dayText.text!)
-       // dateCompenets.month = Int(monthText.text!)
-       // dateCompenets.year = Int(yearText.text!)
+        
         
         let date = calendar.date(from: dateCompenets)
         
@@ -38,7 +40,9 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "EEEE"
         
         let weekday = dateFormatter.string(from: date!)
-        let capitalizedWeekday = weekday.capitalizedresultLabel.text = capitalizedWeekday
+        
+        let capitalizedWeekday = weekday.capitalized
+        resultLabel.text = capitalizedWeekday
     }
     
     

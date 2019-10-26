@@ -206,9 +206,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Day Finder" leftItemsSupplementBackButton="YES" id="pdD-7D-lV2"/>
                     <connections>
-                        <outlet property="dayOfTheWeek" destination="S7t-8d-ESq" id="dir-gL-nJd"/>
                         <outlet property="dayText" destination="Ri4-nx-ehA" id="dqD-Df-s1l"/>
                         <outlet property="monthText" destination="ShT-nK-Pbk" id="MMo-MM-hng"/>
+                        <outlet property="resultLabel" destination="S7t-8d-ESq" id="dir-gL-nJd"/>
                         <outlet property="yearText" destination="rAK-8j-VoT" id="3VR-Kn-3yd"/>
                     </connections>
                 </viewController>
