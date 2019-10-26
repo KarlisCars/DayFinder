@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var str = "izmainja"
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
