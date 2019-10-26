@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rQd-MQ-nje">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,74 +12,209 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Check Your Date" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2i-XI-so8">
-                                <rect key="frame" x="139" y="156" width="137" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Day:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-nx-ehA">
-                                <rect key="frame" x="29" y="320" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Month:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ShT-nK-Pbk">
-                                <rect key="frame" x="29" y="371" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Year" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAK-8j-VoT">
-                                <rect key="frame" x="29" y="422" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="Day of the week, inside your finder." borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sv-jO-v2r">
-                                <rect key="frame" x="148" y="562" width="109" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h52-i2-76D">
-                                <rect key="frame" x="157" y="374" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-6b-2KA">
-                                <rect key="frame" x="157" y="425" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-JZ-q5q">
-                                <rect key="frame" x="157" y="325" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvn-Cj-8EX">
-                                <rect key="frame" x="121" y="738" width="173" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvn-Cj-8EX">
+                                <rect key="frame" x="104" y="575" width="170" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.1935164576" blue="0.010587793539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="mGa-9A-oa4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="qS1-op-cu8"/>
+                                    <constraint firstAttribute="height" constant="30" id="vcK-Kz-Cyf"/>
+                                </constraints>
+                                <state key="normal" title="Find">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mGa-9A-oa4"/>
+                                        <exclude reference="vcK-Kz-Cyf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="mGa-9A-oa4"/>
+                                        <exclude reference="qS1-op-cu8"/>
+                                        <include reference="vcK-Kz-Cyf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="findMyWeek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MA2-aj-g4r"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-NE-Iuc">
+                                <rect key="frame" x="29" y="269.5" width="326" height="122"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="uK0-c6-hHe">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="122"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-JZ-q5q">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h52-i2-76D">
+                                                <rect key="frame" x="0.0" y="59" width="54" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-6b-2KA">
+                                                <rect key="frame" x="0.0" y="101.5" width="54" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aox-iD-jJQ">
+                                        <rect key="frame" x="154" y="0.0" width="172" height="122"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Day:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-nx-ehA">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.1935164576" blue="0.010587793539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Month:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ShT-nK-Pbk">
+                                                <rect key="frame" x="0.0" y="44" width="172" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.1935164576" blue="0.010587793539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Year" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAK-8j-VoT">
+                                                <rect key="frame" x="0.0" y="88" width="172" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.1935164576" blue="0.010587793539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLD-Fb-0xM">
+                                <rect key="frame" x="94" y="121" width="187.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week, inside your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7t-8d-ESq">
+                                <rect key="frame" x="123" y="449.5" width="128" height="82.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="39s-nu-SlA"/>
+                                    <constraint firstAttribute="width" constant="158" id="DAF-HD-mzs"/>
+                                    <constraint firstAttribute="height" constant="82.5" id="Flo-QD-A35"/>
+                                    <constraint firstAttribute="height" constant="108" id="GXj-CS-wt1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DAF-HD-mzs"/>
+                                        <exclude reference="GXj-CS-wt1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DAF-HD-mzs"/>
+                                        <include reference="GXj-CS-wt1"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6668531216561473" blue="0.41561087672461583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S7t-8d-ESq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="5HW-0T-LE4">
+                                <variation key="heightClass=compact-widthClass=compact" constant="254"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rz8-NE-Iuc" secondAttribute="trailing" constant="20" id="BQb-zE-5fP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gvn-Cj-8EX" secondAttribute="trailing" constant="101" id="BnE-s8-9p4"/>
+                            <constraint firstItem="S7t-8d-ESq" firstAttribute="top" secondItem="rz8-NE-Iuc" secondAttribute="bottom" constant="132.5" id="IHA-ye-dsc">
+                                <variation key="heightClass=compact-widthClass=compact" constant="11.5"/>
+                            </constraint>
+                            <constraint firstItem="Gvn-Cj-8EX" firstAttribute="centerX" secondItem="S7t-8d-ESq" secondAttribute="centerX" id="KhG-PB-MhO">
+                                <variation key="heightClass=compact-widthClass=compact" constant="216"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S7t-8d-ESq" secondAttribute="trailing" constant="124" id="NJs-CI-Sg8"/>
+                            <constraint firstItem="rz8-NE-Iuc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="OpR-1E-SZi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7t-8d-ESq" secondAttribute="trailing" constant="255" id="Tpz-ue-Wxl"/>
+                            <constraint firstItem="cLD-Fb-0xM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="V53-qS-WqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gvn-Cj-8EX" secondAttribute="bottom" constant="62" id="WLT-Ku-slt">
+                                <variation key="heightClass=compact-widthClass=compact" constant="288"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="S7t-8d-ESq" secondAttribute="leading" constant="88.5" id="coN-tr-fHp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-123"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7t-8d-ESq" secondAttribute="trailing" constant="124" id="feF-hw-fyw"/>
+                            <constraint firstItem="Gvn-Cj-8EX" firstAttribute="leading" secondItem="cLD-Fb-0xM" secondAttribute="trailing" constant="44" id="gHE-Hg-FIb"/>
+                            <constraint firstItem="Gvn-Cj-8EX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="gLJ-vh-J8l"/>
+                            <constraint firstItem="cLD-Fb-0xM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h2v-ul-qp6"/>
+                            <constraint firstItem="Gvn-Cj-8EX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="iCv-lk-Fxm"/>
+                            <constraint firstItem="rz8-NE-Iuc" firstAttribute="top" secondItem="cLD-Fb-0xM" secondAttribute="bottom" constant="117" id="rwO-eV-dU4">
+                                <variation key="heightClass=compact-widthClass=compact" constant="21"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S7t-8d-ESq" secondAttribute="bottom" constant="24" id="uv7-1U-Qvp"/>
+                            <constraint firstItem="S7t-8d-ESq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="254" id="xkE-3I-rh2"/>
+                            <constraint firstItem="S7t-8d-ESq" firstAttribute="top" secondItem="rz8-NE-Iuc" secondAttribute="bottom" constant="58" id="yhY-m0-T06"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gvn-Cj-8EX" secondAttribute="trailing" constant="22.5" id="zvj-Wn-G5K"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BnE-s8-9p4"/>
+                                <exclude reference="Tpz-ue-Wxl"/>
+                                <exclude reference="coN-tr-fHp"/>
+                                <exclude reference="feF-hw-fyw"/>
+                                <exclude reference="uv7-1U-Qvp"/>
+                                <exclude reference="zvj-Wn-G5K"/>
+                                <exclude reference="xkE-3I-rh2"/>
+                                <exclude reference="gHE-Hg-FIb"/>
+                                <exclude reference="gLJ-vh-J8l"/>
+                                <exclude reference="iCv-lk-Fxm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="NJs-CI-Sg8"/>
+                                <include reference="Tpz-ue-Wxl"/>
+                                <exclude reference="WLT-Ku-slt"/>
+                                <include reference="uv7-1U-Qvp"/>
+                                <include reference="zvj-Wn-G5K"/>
+                                <exclude reference="5HW-0T-LE4"/>
+                                <exclude reference="IHA-ye-dsc"/>
+                                <include reference="xkE-3I-rh2"/>
+                                <exclude reference="KhG-PB-MhO"/>
+                                <include reference="gHE-Hg-FIb"/>
+                                <include reference="gLJ-vh-J8l"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="BnE-s8-9p4"/>
+                                <exclude reference="NJs-CI-Sg8"/>
+                                <include reference="coN-tr-fHp"/>
+                                <include reference="feF-hw-fyw"/>
+                                <exclude reference="5HW-0T-LE4"/>
+                                <exclude reference="IHA-ye-dsc"/>
+                                <exclude reference="KhG-PB-MhO"/>
+                                <include reference="iCv-lk-Fxm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Day Finder" leftItemsSupplementBackButton="YES" id="pdD-7D-lV2"/>
+                    <connections>
+                        <outlet property="dayOfTheWeek" destination="S7t-8d-ESq" id="dir-gL-nJd"/>
+                        <outlet property="dayText" destination="Ri4-nx-ehA" id="dqD-Df-s1l"/>
+                        <outlet property="monthText" destination="ShT-nK-Pbk" id="MMo-MM-hng"/>
+                        <outlet property="yearText" destination="rAK-8j-VoT" id="3VR-Kn-3yd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1040.8" y="109.29535232383809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Kd-VT-dz1">
@@ -87,7 +222,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rQd-MQ-nje" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Kxx-GU-sV4">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.19351645756437552" blue="0.010587793544220903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
