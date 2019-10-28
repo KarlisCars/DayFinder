@@ -8,7 +8,7 @@
 
 import UIKit
 var str = "izmainja"
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var dayText: UITextField!
     @IBOutlet weak var monthText: UITextField!
@@ -17,9 +17,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         statusBarStyle()
+        //added observers for keyboard. Listens for keyboard events
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
     }
-    
+    //removes Observers. Stops listening for keyboard events
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+    }
     @IBAction func findMyWeek(_ sender: Any) {
         let calendar = Calendar.current
          var dateCompenets = DateComponents()
@@ -61,6 +71,11 @@ class ViewController: UIViewController {
     }
    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
+    }
+    // this func changes keyboard. 250 height of keyboard
+    @objc func keyboardWillChange(notification: Notification){print("Keyboard will show: \(notification.name.rawValue)")
+        
+        view.frame.origin.y = -250
     }
 }
 
