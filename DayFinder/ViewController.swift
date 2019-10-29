@@ -73,9 +73,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     self.view.endEditing(true)
     }
     // this func changes keyboard. 250 height of keyboard
-    @objc func keyboardWillChange(notification: Notification){print("Keyboard will show: \(notification.name.rawValue)")
+    @objc func keyboardWillChange(notification: Notification){
         
-        view.frame.origin.y = -250
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        if notification.name == UIResponder.keyboardWillShowNotification ||
+            notification.name == UIResponder.keyboardWillChangeFrameNotification{
+            
+            view.frame.origin.y = -keyboardRect.height
+        }else{
+            view.frame.origin.y = 0
+        }
+        
     }
 }
 
